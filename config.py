@@ -18,35 +18,35 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+API_ID = int(environ.get("21465896", ""))
+API_HASH = environ.get("41924d8bb7c9f4d0df5d2a04ac33ed7c", "")
+BOT_TOKEN = environ.get("7138359782:AAEOVcXvOVpystYsP1K2av4YD_TSDroUC9o", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "JPBACKUP_bot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
 CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://jatinpansuriya1111:95125@jatin@cluster0.dkyji.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "")
+DB_URI = environ.get("DB_URI", "mongodb+srv://jatinpansuriya1111:95125@jatin@cluster0.dkyji.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = environ.get("DB_NAME", "techvjbotz")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
 
 # If Auto Delete Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
-AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
+AUTO_DELETE = int(environ.get("AUTO_DELETE", "10")) # Time in Minutes
+AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "600")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002173621791"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
@@ -59,9 +59,9 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "api.shareus.io") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "hRPS5vvZc0OGOEUQJMJzPiojoVK2") # shortlink api
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/How_To_Open_Linkl") # how to open link 
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "INSTANTLINKS.CO") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "86e7d7e1f75cd9546f78103b7aba56f262f70fee") # shortlink api
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/+f10qZ3Vd42g5Nzc1") # how to open link 
 
 # Website Info:
 WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or False
